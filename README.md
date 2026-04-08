@@ -1,1 +1,7 @@
-# homebrew-tap
+# $ academic  
+
+```
+brew tap academic/tap
+brew install academic
+
+```
