@@ -1,16 +1,16 @@
 class Academic < Formula
   desc "Omnichannel payments CLI for Academic"
   homepage "https://academic.io"
-  version "2026.04.08.4"
+  version "2026.04.08.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/academic/homebrew-tap/releases/download/v#{version}/homebrew-tap_darwin_arm64.tar.gz"
-      sha256 "48142eb50b73349b9ab29ae28ea78c61554b930c6c03c29823005e68a4e9ee3b"
+      url "https://github.com/academic/homebrew-tap/releases/download/v#{version}/academic-cli_darwin_arm64.tar.gz"
+      sha256 "3e266bf6ad72ff4a06e9ac59a01ba6087d3acfeb3f5efc60a1437516780d75e8"
     elsif Hardware::CPU.intel?
-      url "https://github.com/academic/homebrew-tap/releases/download/v#{version}/homebrew-tap_darwin_amd64.tar.gz"
-      sha256 "62b6f780255f754f8b759513159b5f12d358a533bc546a517b756baa3e840b97"
+      url "https://github.com/academic/homebrew-tap/releases/download/v#{version}/academic-cli_darwin_amd64.tar.gz"
+      sha256 "fd5339921bec16e5bf6ab20949acefb2a75ae0b20964698348af24507f40ed2b"
     else
       odie "Unsupported macOS architecture"
     end
@@ -18,11 +18,11 @@ class Academic < Formula
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/academic/homebrew-tap/releases/download/v#{version}/homebrew-tap_linux_arm64.tar.gz"
-      sha256 "0539670c0fce7b69a6966c91f8502de62fbe783ea096ea16c8b4bd867563d0ea"
+      url "https://github.com/academic/homebrew-tap/releases/download/v#{version}/academic-cli_linux_arm64.tar.gz"
+      sha256 "c51ceb6638aafc79592192628a7a3733cd14754966a303d164e45d469f38f047"
     elsif Hardware::CPU.intel?
-      url "https://github.com/academic/homebrew-tap/releases/download/v#{version}/homebrew-tap_linux_amd64.tar.gz"
-      sha256 "cfd059dae693e7c3523b1dd3bbc9e91a9d3e3ef45823d6bb686b8cb1785db8d7"
+      url "https://github.com/academic/homebrew-tap/releases/download/v#{version}/academic-cli_linux_amd64.tar.gz"
+      sha256 "66defc034becffebf871f5da8b111aa3b20945ea4ed3ba1cc62a818982a6ffb0"
     else
       odie "Unsupported Linux architecture"
     end
