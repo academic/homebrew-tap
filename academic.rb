@@ -1,16 +1,16 @@
 class Academic < Formula
   desc "Omnichannel payments CLI for Academic"
   homepage "https://academic.io"
-  version "2026.04.12.1"
+  version "2026.05.01.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/academic/homebrew-tap/releases/download/v#{version}/academic-cli_darwin_arm64.tar.gz"
-      sha256 "1833201572961c24eb063420ce02720e39d6fcd88df18a3114ce417bc8693097"
+      sha256 "cd94cb46caacf318b37de744bb0a02484f1b48418f5f13c9553e4a449291287b"
     elsif Hardware::CPU.intel?
       url "https://github.com/academic/homebrew-tap/releases/download/v#{version}/academic-cli_darwin_amd64.tar.gz"
-      sha256 "0db726b3509a13909ced0c05d655ebdce92b63c5c1c9d3d24fd8efab7196b12e"
+      sha256 "79d62fc2bae55ab969627ede7db4aa1766637274c020996d542e9eefbbfa7856"
     else
       odie "Unsupported macOS architecture"
     end
@@ -19,10 +19,10 @@ class Academic < Formula
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/academic/homebrew-tap/releases/download/v#{version}/academic-cli_linux_arm64.tar.gz"
-      sha256 "c7079f3884467a59d55c523265ae7915722cbb995031c61909dc7e4c124d7154"
+      sha256 "2d6ac9a5fc052507a98da5ea43fc73d4c763763f3ae6f5edc2513fe3b0e60b44"
     elsif Hardware::CPU.intel?
       url "https://github.com/academic/homebrew-tap/releases/download/v#{version}/academic-cli_linux_amd64.tar.gz"
-      sha256 "420a3d40d0d31a4712a2c551d1bdbbb52d13c265f8bc15f09b1d64dfaaa4f202"
+      sha256 "47f289df5a0eb47a51b46168de6ec7de10a37341b10b899be3e06c0b22d4907a"
     else
       odie "Unsupported Linux architecture"
     end
